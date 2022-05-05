@@ -1,0 +1,144 @@
+.cruises {
+  width: 320px;
+  margin: 0 auto;
+  padding: 65px 0;
+
+  @media (min-width: $vp-768) {
+    width: 100%;
+    padding: 100px 28px;
+  }
+
+  @media (min-width: $vp-1280) {
+    width: 1130px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 1366px;
+    margin: 0 auto;
+  }
+}
+
+.cruises__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 0 40px;
+
+  @media (min-width: $vp-768) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
+.cruises__list {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex: 1;
+  }
+
+  @media (min-width: $vp-1280) {
+    width: 1130px;
+  }
+
+  @media (min-width: 1366px) {
+    margin: 0 auto;
+  }
+}
+
+.cruises__item {
+  list-style: none;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
+}
+
+.cruises__item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $alice-blue;
+  margin: 0;
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+}
+
+.cruises__program {
+  background-color: $color-tangaroa;
+  padding: 25px;
+  width: 270px;
+  height: 386px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.8s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+    width: 309px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $vp-1280) {
+    width: 260px;
+  }
+}
+
+.cruises__program-title {
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $alice-blue;
+  display: inline-block;
+}
+
+.cruises__program-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $light-grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.cruises__program-title span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $light-grey;
+}
+
+.cruises__program-link {
+  display: block;
+  padding: 12px 52px;
+  cursor: pointer;
+  background-color: $alice-blue;
+  color: $color-tangaroa;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
