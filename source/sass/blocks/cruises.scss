@@ -1,11 +1,11 @@
 .cruises {
   width: 320px;
   margin: 0 auto;
-  padding: 65px 0;
+  padding: 56px 25px 62px;
 
   @media (min-width: $vp-768) {
     width: 100%;
-    padding: 100px 28px;
+    padding: 90px 22px 100px 28px;
   }
 
   @media (min-width: $vp-1280) {
@@ -23,11 +23,13 @@
   font-size: 24px;
   line-height: 36px;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0 0 34px;
+  letter-spacing: 1.5px;
 
   @media (min-width: $vp-768) {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 50px;
   }
 }
 
@@ -77,52 +79,78 @@
   color: $alice-blue;
   margin: 0;
   position: absolute;
-  bottom: 25px;
-  left: 50px;
+  bottom: 19px;
+  left: 27px;
+  letter-spacing: 1px;
+
+  @media (min-width: $vp-768) {
+    left: 38px;
+    bottom: 28px;
+  }
 }
 
 .cruises__program {
   background-color: $color-tangaroa;
-  padding: 25px;
-  width: 270px;
-  height: 386px;
+  padding: 25px 25px 35px 25px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   opacity: 0;
-  transition: 0.8s;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   &:hover {
     opacity: 1;
   }
 
   @media (min-width: $vp-768) {
-    display: flex;
-    flex-direction: column;
-    width: 309px;
-    flex-grow: 1;
+    padding: 26px 34px 35px 38px;
   }
 
   @media (min-width: $vp-1280) {
-    width: 260px;
+    width: 100%;
   }
 }
 
 .cruises__program-title {
-  margin: 0 0 10px;
+  margin: 0 0 7px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: $alice-blue;
-  display: inline-block;
+  letter-spacing: 1px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+  }
+}
+
+.cruises__program-heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: $alice-blue;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 6px 0;
 }
 
 .cruises__program-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 19px;
   color: $light-grey;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $vp-768) {
+    margin-top: 5px;
+  }
 }
 
 .cruises__program-title span {
@@ -134,11 +162,22 @@
 
 .cruises__program-link {
   display: block;
-  padding: 12px 52px;
+  padding: 12px 50px;
+  margin-top: 10px;
   cursor: pointer;
   background-color: $alice-blue;
   color: $color-tangaroa;
   font-weight: 600;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 16px;
+  letter-spacing: 1px;
+
+  @media (min-width: $vp-768) {
+    margin-top: 18px;
+    padding: 12px 58px;
+  }
+
+  @media (min-width: $vp-1280) {
+    padding: 12px 34px;
+  }
 }

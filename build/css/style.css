@@ -846,7 +846,7 @@ button,
 }
 
 .advantages__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -887,7 +887,7 @@ body {
 .cruises {
   width: 320px;
   margin: 0 auto;
-  padding: 65px 0;
+  padding: 56px 25px 62px;
 }
 
 .cruises__title {
@@ -895,7 +895,8 @@ body {
   font-size: 24px;
   line-height: 36px;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0 0 34px;
+  letter-spacing: 1.5px;
 }
 
 .cruises__list {
@@ -930,21 +931,31 @@ body {
   color: #f9fbfd;
   margin: 0;
   position: absolute;
-  bottom: 25px;
-  left: 50px;
+  bottom: 19px;
+  left: 27px;
+  letter-spacing: 1px;
 }
 
 .cruises__program {
   background-color: #011c40;
-  padding: 25px;
-  width: 270px;
-  height: 386px;
+  padding: 25px 25px 35px 25px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   opacity: 0;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .cruises__program:hover {
@@ -952,18 +963,34 @@ body {
 }
 
 .cruises__program-title {
-  margin: 0 0 10px;
+  margin: 0 0 7px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
-  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.cruises__program-heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #f9fbfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 0 6px 0;
 }
 
 .cruises__program-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 19px;
   color: #d8d8d9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,19 +1010,21 @@ body {
 
 .cruises__program-link {
   display: block;
-  padding: 12px 52px;
+  padding: 12px 50px;
+  margin-top: 10px;
   cursor: pointer;
   background-color: #f9fbfd;
   color: #011c40;
   font-weight: 600;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 16px;
+  letter-spacing: 1px;
 }
 
 .feedback {
   width: 100%;
-  margin: 0 auto 25px;
-  padding: 65px 15px;
+  margin: 0 auto 66px;
+  padding: 60px 15px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1012,14 +1041,7 @@ body {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 816px;
-}
-
-.feedback__inner {
-  width: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 762px;
 }
 
 .feedback__title {
@@ -1028,22 +1050,24 @@ body {
   line-height: 31px;
   text-align: center;
   width: 194px;
-  margin: 0 auto 25px;
+  margin: 0 auto 11px;
+  letter-spacing: 1px;
 }
 
 .feedback__text {
-  width: 257px;
-  margin: 0 auto 40px;
+  width: 276px;
+  margin: 0 auto 36px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: 1px;
 }
 
 .feedback__form {
   width: 290px;
   margin: 0 auto;
-  padding: 40px 30px;
+  padding: 37px 30px;
   background-color: #011c40;
   position: relative;
 }
@@ -1051,17 +1075,18 @@ body {
 .feedback__form-text {
   font-weight: 500;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 24px;
   color: #f9fbfd;
-  width: 214px;
+  width: 224px;
   text-align: center;
-  margin: 0 auto 35px;
+  margin: 0 auto 27px;
+  letter-spacing: 1.5px;
 }
 
 .feedback__form-label {
   display: block;
   width: 230px;
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
   padding: 11px 16px;
   background-color: #f9fbfd;
 }
@@ -1079,10 +1104,11 @@ body {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
+  letter-spacing: 0.4px;
   background-color: transparent;
   color: #f9fbfd;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   position: relative;
   cursor: pointer;
 }
@@ -1129,15 +1155,13 @@ body {
 .feedback__form-input[placeholder] {
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 12px;
 }
 
 .feedback__form-btn {
-  padding: 15px 53px;
-  border: none;
+  padding: 12px 48px;
+  border: 0;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
   cursor: pointer;
 }
 
@@ -1148,7 +1172,8 @@ body {
 }
 
 .contact__text {
-  margin: 0 0 40px;
+  margin: 0 0 24px;
+  letter-spacing: 1px;
   width: 270px;
   font-weight: 500;
   font-size: 18px;
@@ -1194,7 +1219,7 @@ body {
 
 .contact__item {
   list-style: none;
-  margin-bottom: 33px;
+  margin-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,10 +1228,15 @@ body {
   align-items: center;
 }
 
+.contact__item:last-child {
+  margin-bottom: 35px;
+}
+
 .contact__item-text {
   display: inline-block;
   margin-left: 10px;
   width: 255px;
+  letter-spacing: 0.7px;
 }
 
 .footer {
@@ -1219,7 +1249,7 @@ body {
 
 .footer__logo {
   display: block;
-  margin: 0 0 30px;
+  margin: 0 0 24px;
   width: 42px;
   height: 22px;
 }
@@ -1231,11 +1261,11 @@ body {
 
 .footer__item {
   list-style: none;
-  margin-bottom: 23px;
+  margin-bottom: 8px;
 }
 
 .footer__item:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .footer__item-link {
@@ -1243,6 +1273,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  letter-spacing: 1px;
 }
 
 .footer__social-list {
@@ -1381,13 +1412,19 @@ body {
 }
 
 .header-nav__list.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: absolute;
   top: -20px;
   right: -14px;
   z-index: 1;
   background-color: #f9fbfd;
-  width: 284px;
+  width: 100%;
   height: 560px;
   -webkit-box-shadow: -35px 0 0 rgba(0, 43, 102, 0.5);
   box-shadow: -35px 0 0 rgba(0, 43, 102, 0.5);
@@ -1397,7 +1434,7 @@ body {
   list-style: none;
   padding: 10px;
   margin-bottom: 6px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .header-nav__link {
@@ -1436,6 +1473,10 @@ body {
   display: none;
 }
 
+.banner__logo.open-js {
+  opacity: 0;
+}
+
 .banner__title {
   position: absolute;
   left: 16px;
@@ -1449,6 +1490,10 @@ body {
   letter-spacing: 2px;
   color: #f9fbfd;
   margin: 0;
+}
+
+.banner__title.open-js {
+  opacity: 0;
 }
 
 .banner__text {
@@ -1465,6 +1510,10 @@ body {
   color: #f9fbfd;
   margin: 0;
   width: 199px;
+}
+
+.banner__text.open-js {
+  opacity: 0;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1492,11 +1541,11 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 100px 45px;
+    padding: 91px 36px 91px 45px;
   }
 
   .description__inner {
-    width: 45%;
+    width: 47%;
   }
 
   .description__title {
@@ -1521,13 +1570,15 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 100px 45px;
+    padding: 90px 55px 52px 48px;
   }
 
   .advantages__title {
     font-size: 26px;
     line-height: 39px;
-    margin: 0 auto 60px;
+    margin: 0 auto 51px;
+    letter-spacing: 1.7px;
+    width: 194px;
   }
 
   .advantages__list {
@@ -1538,22 +1589,24 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
+    width: 680px;
   }
 
   .advantages__item {
-    width: 30%;
+    width: 31%;
     margin-bottom: 0;
-    padding: 25px 20px;
+    padding: 26px 11px 14px 20px;
   }
 
   .cruises {
     width: 100%;
-    padding: 100px 28px;
+    padding: 90px 22px 100px 28px;
   }
 
   .cruises__title {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 50px;
   }
 
   .cruises__list {
@@ -1579,18 +1632,27 @@ body {
     margin: 0;
   }
 
+  .cruises__item-title {
+    left: 38px;
+    bottom: 28px;
+  }
+
   .cruises__program {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 309px;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    padding: 26px 34px 35px 38px;
+  }
+
+  .cruises__program-title {
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+  }
+
+  .cruises__program-text {
+    margin-top: 5px;
+  }
+
+  .cruises__program-link {
+    margin-top: 18px;
+    padding: 12px 58px;
   }
 
   .feedback img {
@@ -1650,7 +1712,7 @@ body {
   }
 
   .feedback__form-btn {
-    padding: 15px 90px;
+    padding: 15px 85px;
   }
 
   .contact {
@@ -1745,7 +1807,7 @@ body {
 
   .page-header__wrapper {
     margin: 0 auto;
-    padding: 30px 45px;
+    padding: 28px 44px;
   }
 
   .page-header__nav-toggle {
@@ -1765,23 +1827,14 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 168px;
+    margin-left: 180px;
     padding: 0;
     width: 550px;
   }
 
-  .header-nav__list.is-open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: static;
-    background-color: transparent;
-    width: 588px;
-  }
-
   .header-nav__item {
     padding: 0;
-    margin: 0 18px 0 0;
+    margin: 0 28px 0 0;
   }
 
   .header-nav__item:last-child {
@@ -1811,22 +1864,21 @@ body {
 
   .banner__title {
     font-size: 50px;
-    line-height: 61px;
+    line-height: 58px;
     letter-spacing: 3px;
     left: 51px;
     -webkit-transform: translateY(-50px);
     -ms-transform: translateY(-50px);
     transform: translateY(-50px);
-    margin-bottom: 32px;
   }
 
   .banner__text {
     width: 387px;
     top: 47%;
     left: 51px;
-    -webkit-transform: translateY(40px);
-    -ms-transform: translateY(40px);
-    transform: translateY(40px);
+    -webkit-transform: translateY(42px);
+    -ms-transform: translateY(42px);
+    transform: translateY(42px);
     letter-spacing: 2.6px;
   }
 }
@@ -1842,9 +1894,6 @@ body {
   }
 
   .header-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -1862,7 +1911,11 @@ body {
   }
 
   .cruises__program {
-    width: 260px;
+    width: 100%;
+  }
+
+  .cruises__program-link {
+    padding: 12px 34px;
   }
 
   .feedback {

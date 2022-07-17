@@ -30,7 +30,7 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-direction: column;
-    padding: 100px 45px;
+    padding: 90px 55px 52px 48px;
   }
 }
 
@@ -46,18 +46,21 @@
   @media (min-width: $vp-768) {
     font-size: 26px;
     line-height: 39px;
-    margin: 0 auto 60px;
+    margin: 0 auto 51px;
+    letter-spacing: 1.7px;
+    width: 194px;
   }
 }
 
 .advantages__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: center;
     gap: 30px;
+    width: 680px;
   }
 }
 
@@ -72,9 +75,9 @@
   }
 
   @media (min-width: $vp-768) {
-    width: 30%;
+    width: 31%;
     margin-bottom: 0;
-    padding: 25px 20px;
+    padding: 26px 11px 14px 20px;
   }
 }
 

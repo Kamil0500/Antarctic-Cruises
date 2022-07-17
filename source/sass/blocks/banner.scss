@@ -23,6 +23,10 @@
     }
   }
 
+  &.open-js {
+    opacity: 0;
+  }
+
   @media (min-width: $vp-768) {
     display: block;
     top: 30px;
@@ -43,13 +47,16 @@
   color: $alice-blue;
   margin: 0;
 
+  &.open-js {
+    opacity: 0;
+  }
+
   @media (min-width: $vp-768) {
     font-size: 50px;
-    line-height: 61px;
+    line-height: 58px;
     letter-spacing: 3px;
     left: 51px;
     transform: translateY(-50px);
-    margin-bottom: 32px;
   }
 }
 
@@ -66,11 +73,15 @@
   margin: 0;
   width: 199px;
 
+  &.open-js {
+    opacity: 0;
+  }
+
   @media (min-width: $vp-768) {
     width: 387px;
     top: 47%;
     left: 51px;
-    transform: translateY(40px);
+    transform: translateY(42px);
     letter-spacing: 2.6px;
   }
 }

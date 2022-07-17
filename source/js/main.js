@@ -15,6 +15,9 @@ window.addEventListener('DOMContentLoaded', () => {
   btn.onclick = () => {
     click.classList.toggle('is-active');
     nav.classList.toggle('is-open');
+    document.querySelector('.banner__logo').classList.toggle('open-js');
+    document.querySelector('.banner__title').classList.toggle('open-js');
+    document.querySelector('.banner__text').classList.toggle('open-js');
   };
 
   // Utils

@@ -32,12 +32,13 @@
 }
 
 .contact__text {
-  margin: 0 0 40px;
+  margin: 0 0 24px;
+  letter-spacing: 1px;
   width: 270px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: $color-tangaroa;
+  color: #011c40;
 
   @media (min-width: $vp-768) {
     width: 324px;
@@ -101,15 +102,20 @@
 
 .contact__item {
   list-style: none;
-  margin-bottom: 33px;
+  margin-bottom: 22px;
   display: flex;
   align-items: center;
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
 }
 
 .contact__item-text {
   display: inline-block;
   margin-left: 10px;
   width: 255px;
+  letter-spacing: 0.7px;
 
   @media (min-width: 1366px) {
     width: 476px;
