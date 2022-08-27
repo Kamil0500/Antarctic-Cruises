@@ -2,7 +2,7 @@
   position: relative;
 
   @media (min-width: $vp-1024) {
-    width: 934px;
+    width: 1280px;
   }
 }
 
@@ -24,11 +24,11 @@
     flex-direction: column;
     position: absolute;
     top: -20px;
-    right: -14px;
+    right: -18px;
     z-index: 1;
     background-color: $alice-blue;
     width: 100%;
-    height: 560px;
+    height: 566px;
     box-shadow: -35px 0 0 rgba($prussian-blue, 0.5);
   }
 
@@ -41,12 +41,12 @@
   }
 
   @media (min-width: $vp-1024) {
-    justify-content: flex-end;
     width: 698px;
   }
 
   @media (min-width: 1366px) {
-    width: 980px;
+    width: 654px;
+    margin-left: 624px;
   }
 }
 
@@ -58,7 +58,7 @@
 
   @media (min-width: $vp-768) {
     padding: 0;
-    margin: 0 28px 0 0;
+    margin: 0 18px 0 0;
 
     &:last-child {
       margin: 0;
@@ -66,7 +66,7 @@
   }
 
   @media (min-width: 1366px) {
-    margin: 0 33px 0 0;
+    margin: 0 31px 0 0;
   }
 }
 
@@ -74,12 +74,18 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 1.7px;
   color: $color-tangaroa;
 
   @media (min-width: $vp-768) {
     font-size: 14px;
     line-height: 17px;
     color: $alice-blue;
+  }
+
+  @media (min-width: $vp-1280) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

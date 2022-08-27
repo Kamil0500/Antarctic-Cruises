@@ -33,6 +33,18 @@
     left: 45px;
     z-index: 1;
   }
+
+  @media (min-width: $vp-1280) {
+    top: 35px;
+    left: 103px;
+  }
+}
+
+.banner__logo-icon {
+  @media (min-width: $vp-1280) {
+    width: 70px;
+    height: 38px;
+  }
 }
 
 .banner__title {
@@ -53,10 +65,18 @@
 
   @media (min-width: $vp-768) {
     font-size: 50px;
-    line-height: 58px;
+    line-height: 61px;
     letter-spacing: 3px;
     left: 51px;
     transform: translateY(-50px);
+  }
+
+  @media (min-width: $vp-1280) {
+    font-size: 54px;
+    line-height: 66px;
+    left: 15%;
+    transform: translate(-4px, -53px);
+    width: 636px;
   }
 }
 
@@ -78,10 +98,19 @@
   }
 
   @media (min-width: $vp-768) {
-    width: 387px;
+    width: 426px;
     top: 47%;
     left: 51px;
     transform: translateY(42px);
-    letter-spacing: 2.6px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  @media (min-width: $vp-1280) {
+    font-size: 20px;
+    line-height: 24px;
+    left: 15%;
+    transform: translate(-7px, 43px);
+    letter-spacing: 1.6px;
   }
 }

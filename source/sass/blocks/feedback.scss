@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $vp-768) {
+    margin-bottom: 41px;
+  }
+
   @media (min-width: $vp-1280) {
     flex-direction: row;
     align-items: center;
@@ -36,19 +40,34 @@
   }
 }
 
+.feedback__wrap {
+  @media (min-width: $vp-768) {
+    width: 745px;
+  }
+}
+
+.feedback__inner {
+  @media (min-width: $vp-768) {
+    padding: 26px;
+  }
+}
+
 .feedback__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+  color: $color-tangaroa;
   text-align: center;
   width: 194px;
   margin: 0 auto 11px;
   letter-spacing: 1px;
 
   @media (min-width: $vp-768) {
-    width: 420px;
+    width: 423px;
     font-size: 34px;
     line-height: 51px;
+    margin-bottom: 6px;
+    letter-spacing: 2px;
   }
 
   @media (min-width: 1366px) {
@@ -65,12 +84,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: $color-tangaroa;
   letter-spacing: 1px;
 
   @media (min-width: $vp-768) {
     width: 352px;
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: 1366px) {
@@ -84,11 +105,12 @@
   margin: 0 auto;
   padding: 37px 30px;
   background-color: $color-tangaroa;
+  box-shadow: 0 4px 45px $color-tangaroa-015;
   position: relative;
 
   @media (min-width: $vp-768) {
-    width: 403px;
-    padding: 50px;
+    width: 404px;
+    padding: 45px 50px 50px;
   }
 
   @media (min-width: 1366px) {
@@ -99,7 +121,7 @@
 .feedback__form-text {
   font-weight: 500;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 25px;
   color: #f9fbfd;
   width: 224px;
   text-align: center;
@@ -107,20 +129,23 @@
   letter-spacing: 1.5px;
 
   @media (min-width: $vp-768) {
-    width: 303px;
+    width: 312px;
     line-height: 27px;
+    text-align: left;
+    letter-spacing: 1.3px;
   }
 }
 
 .feedback__form-label {
   display: block;
   width: 230px;
-  margin: 0 auto 18px;
+  margin: 0 auto 16px;
   padding: 11px 16px;
   background-color: $alice-blue;
 
   @media (min-width: $vp-768) {
     width: 303px;
+    margin-bottom: 16px;
   }
 }
 
@@ -147,7 +172,7 @@
 
   @media (min-width: $vp-768) {
     width: 303px;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 13px;
     display: flex;
     align-items: center;
@@ -199,23 +224,28 @@
   margin-left: 8px;
 
   @media (min-width: $vp-768) {
-    width: 279px;
+    width: 278px;
   }
 }
 
 .feedback__form-input[placeholder] {
   font-weight: 400;
   font-size: 14px;
-  line-height: 12px;
+  line-height: 21px;
+  color: $color-tangaroa;
 }
 
 .feedback__form-btn {
-  padding: 12px 48px;
+  padding: 11px 56px;
   border: 0;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-tangaroa;
   cursor: pointer;
 
   @media (min-width: $vp-768) {
-    padding: 15px 85px;
+    padding: 12px 93px;
+    margin-top: 12px;
   }
 }

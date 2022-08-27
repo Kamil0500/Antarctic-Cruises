@@ -854,7 +854,7 @@ button,
   list-style: none;
   background-color: #f9fbfd;
   margin-bottom: 30px;
-  padding: 25px 15px;
+  padding: 25px 10px 24px 20px;
 }
 
 .advantages__item:last-child {
@@ -867,7 +867,7 @@ button,
   line-height: 25px;
   letter-spacing: 2px;
   color: #011c40;
-  margin: 14px 0 10px;
+  margin: 15px 0 10px;
 }
 
 .advantages__item-text {
@@ -882,6 +882,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   background-color: #e5e5e5;
+  position: relative;
 }
 
 .cruises {
@@ -933,7 +934,7 @@ body {
   position: absolute;
   bottom: 19px;
   left: 27px;
-  letter-spacing: 1px;
+  letter-spacing: 1.3px;
 }
 
 .cruises__program {
@@ -963,7 +964,7 @@ body {
 }
 
 .cruises__program-title {
-  margin: 0 0 7px;
+  margin: 0 0 11px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -974,7 +975,7 @@ body {
 .cruises__program-heading {
   font-weight: 500;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   letter-spacing: 1px;
   color: #f9fbfd;
   display: -webkit-box;
@@ -984,13 +985,13 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 0 6px 0;
+  margin: 0 0 11px;
 }
 
 .cruises__program-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   color: #d8d8d9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,14 +1011,14 @@ body {
 
 .cruises__program-link {
   display: block;
-  padding: 12px 50px;
-  margin-top: 10px;
+  padding: 11px 53px;
+  margin-top: 5px;
   cursor: pointer;
   background-color: #f9fbfd;
   color: #011c40;
   font-weight: 600;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
   letter-spacing: 1px;
 }
 
@@ -1048,6 +1049,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+  color: #011c40;
   text-align: center;
   width: 194px;
   margin: 0 auto 11px;
@@ -1061,6 +1063,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: #011c40;
   letter-spacing: 1px;
 }
 
@@ -1069,13 +1072,15 @@ body {
   margin: 0 auto;
   padding: 37px 30px;
   background-color: #011c40;
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   position: relative;
 }
 
 .feedback__form-text {
   font-weight: 500;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 25px;
   color: #f9fbfd;
   width: 224px;
   text-align: center;
@@ -1086,7 +1091,7 @@ body {
 .feedback__form-label {
   display: block;
   width: 230px;
-  margin: 0 auto 18px;
+  margin: 0 auto 16px;
   padding: 11px 16px;
   background-color: #f9fbfd;
 }
@@ -1155,13 +1160,17 @@ body {
 .feedback__form-input[placeholder] {
   font-weight: 400;
   font-size: 14px;
-  line-height: 12px;
+  line-height: 21px;
+  color: #011c40;
 }
 
 .feedback__form-btn {
-  padding: 12px 48px;
+  padding: 11px 56px;
   border: 0;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
   cursor: pointer;
 }
 
@@ -1172,7 +1181,7 @@ body {
 }
 
 .contact__text {
-  margin: 0 0 24px;
+  margin: 0 0 25px;
   letter-spacing: 1px;
   width: 270px;
   font-weight: 500;
@@ -1226,6 +1235,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .contact__item:last-child {
@@ -1421,11 +1433,11 @@ body {
   flex-direction: column;
   position: absolute;
   top: -20px;
-  right: -14px;
+  right: -18px;
   z-index: 1;
   background-color: #f9fbfd;
   width: 100%;
-  height: 560px;
+  height: 566px;
   -webkit-box-shadow: -35px 0 0 rgba(0, 43, 102, 0.5);
   box-shadow: -35px 0 0 rgba(0, 43, 102, 0.5);
 }
@@ -1441,6 +1453,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 1.7px;
   color: #011c40;
 }
 
@@ -1642,17 +1655,16 @@ body {
   }
 
   .cruises__program-title {
-    margin-bottom: 14px;
     letter-spacing: 1px;
   }
 
-  .cruises__program-text {
-    margin-top: 5px;
+  .cruises__program-link {
+    margin-top: 6px;
+    padding: 12px 58px;
   }
 
-  .cruises__program-link {
-    margin-top: 18px;
-    padding: 12px 58px;
+  .feedback {
+    margin-bottom: 41px;
   }
 
   .feedback img {
@@ -1661,35 +1673,49 @@ body {
     object-fit: cover;
   }
 
+  .feedback__wrap {
+    width: 745px;
+  }
+
+  .feedback__inner {
+    padding: 26px;
+  }
+
   .feedback__title {
-    width: 420px;
+    width: 423px;
     font-size: 34px;
     line-height: 51px;
+    margin-bottom: 6px;
+    letter-spacing: 2px;
   }
 
   .feedback__text {
     width: 352px;
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 25px;
   }
 
   .feedback__form {
-    width: 403px;
-    padding: 50px;
+    width: 404px;
+    padding: 45px 50px 50px;
   }
 
   .feedback__form-text {
-    width: 303px;
+    width: 312px;
     line-height: 27px;
+    text-align: left;
+    letter-spacing: 1.3px;
   }
 
   .feedback__form-label {
     width: 303px;
+    margin-bottom: 16px;
   }
 
   .feedback__form-label__check {
     width: 303px;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 13px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1708,16 +1734,17 @@ body {
   }
 
   .feedback__form-label__text {
-    width: 279px;
+    width: 278px;
   }
 
   .feedback__form-btn {
-    padding: 15px 85px;
+    padding: 12px 93px;
+    margin-top: 12px;
   }
 
   .contact {
     width: 768px;
-    padding: 100px 45px;
+    padding: 100px 45px 94px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1730,12 +1757,14 @@ body {
   }
 
   .contact__info {
-    padding: 38px 0;
+    padding: 64px 0 38px 2px;
     width: 324px;
   }
 
   .contact__text {
     width: 324px;
+    letter-spacing: 1.3px;
+    margin-bottom: 27px;
   }
 
   .contact__map {
@@ -1747,8 +1776,13 @@ body {
     left: 45%;
   }
 
+  .contact__item-text {
+    margin-left: 10px;
+    letter-spacing: 0.7px;
+  }
+
   .footer {
-    padding: 50px 45px;
+    padding: 50px 40px 55px 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1766,13 +1800,14 @@ body {
 
   .footer__logo {
     margin-bottom: 0;
+    margin-right: 25px;
   }
 
   .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 87px 0 25px;
+    margin: 0 87px 0 0;
   }
 
   .footer__item {
@@ -1834,7 +1869,7 @@ body {
 
   .header-nav__item {
     padding: 0;
-    margin: 0 28px 0 0;
+    margin: 0 18px 0 0;
   }
 
   .header-nav__item:last-child {
@@ -1864,7 +1899,7 @@ body {
 
   .banner__title {
     font-size: 50px;
-    line-height: 58px;
+    line-height: 61px;
     letter-spacing: 3px;
     left: 51px;
     -webkit-transform: translateY(-50px);
@@ -1873,13 +1908,14 @@ body {
   }
 
   .banner__text {
-    width: 387px;
+    width: 426px;
     top: 47%;
     left: 51px;
     -webkit-transform: translateY(42px);
     -ms-transform: translateY(42px);
     transform: translateY(42px);
-    letter-spacing: 2.6px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -1890,13 +1926,10 @@ body {
   }
 
   .header-nav {
-    width: 934px;
+    width: 1280px;
   }
 
   .header-nav__list {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
     width: 698px;
   }
 }
@@ -1931,6 +1964,45 @@ body {
 
   .feedback img {
     height: 555px;
+  }
+
+  .page-header__wrapper {
+    padding-top: 42px;
+  }
+
+  .header-nav__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .banner__logo {
+    top: 35px;
+    left: 103px;
+  }
+
+  .banner__logo-icon {
+    width: 70px;
+    height: 38px;
+  }
+
+  .banner__title {
+    font-size: 54px;
+    line-height: 66px;
+    left: 15%;
+    -webkit-transform: translate(-4px, -53px);
+    -ms-transform: translate(-4px, -53px);
+    transform: translate(-4px, -53px);
+    width: 636px;
+  }
+
+  .banner__text {
+    font-size: 20px;
+    line-height: 24px;
+    left: 15%;
+    -webkit-transform: translate(-7px, 43px);
+    -ms-transform: translate(-7px, 43px);
+    transform: translate(-7px, 43px);
+    letter-spacing: 1.6px;
   }
 }
 
@@ -1996,11 +2068,12 @@ body {
   }
 
   .header-nav__list {
-    width: 980px;
+    width: 654px;
+    margin-left: 624px;
   }
 
   .header-nav__item {
-    margin: 0 33px 0 0;
+    margin: 0 31px 0 0;
   }
 }
 
